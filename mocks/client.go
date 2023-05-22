@@ -33,16 +33,16 @@ func (m *MockClient) EXPECT() *MockClientMockRecorder {
 	return m.recorder
 }
 
-// GetDataFromRemote mocks base method.
-func (m *MockClient) GetDataFromRemote() string {
+// GetData mocks base method.
+func (m *MockClient) GetData() string {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDataFromRemote")
+	ret := m.ctrl.Call(m, "GetData")
 	ret0, _ := ret[0].(string)
 	return ret0
 }
 
-// GetDataFromRemote indicates an expected call of GetDataFromRemote.
-func (mr *MockClientMockRecorder) GetDataFromRemote() *gomock.Call {
+// GetData indicates an expected call of GetData.
+func (mr *MockClientMockRecorder) GetData() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataFromRemote", reflect.TypeOf((*MockClient)(nil).GetDataFromRemote))
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetData", reflect.TypeOf((*MockClient)(nil).GetData))
 }
